@@ -40,147 +40,155 @@
                     Західна Україна багата на цікаві місця, тож ви точно не пожалієте, якщо<br>
                     вирушите на відпочинок саме туди. Зібрали для вас ідеї для мандрів, під<br>
                     час яких ви побачите як добре відомі туристичні маршрути, так і не менш<br>красиві куточки Західної України, про які знають не всі. Гайда в подорож!
-            
                 
                 </p>
             </div>
         </div>
-        <img src="img/lvivr.jpg" width="600" height="300" alt="Львів з висоти пташиного польоту">
-        <ul>
-            <li>
-                <i>Екскурсія Львовом</i>
-            </li>
-        </ul>
-        <ol>
-            <li>Вуличками Львова</li>
-            <li>Підземелля Львова</li>
-            <li>7 чудес Львова</li>
-        </ol>
-        <button type="button" id="details">Детальніше</button>
-        <div id="container"></div>
-        <button type="button" id="clear">Очистити</button>
-        <!-- <img src="img/lutsk.jpg" width="600" height="300" alt="Вечірній Луцьк">
-        <ul>
-            <li>
-                <i>Екскурсія Луцьком</i>
-            </li>
-        </ul>
-        <ol>
-            <li>Замок Любарта</li>
-            <li>Музеї Луцька</li>
-            <li>Храми Луцька</li>
-        </ol>
-        <label>
-            <button type="button">Детальніше</button>
-        </label>
-        <br>
-        <img src="img/uzhorod.jpg" width="600" height="300" alt="Ужгород">
-        <ul>
-            <li>
-                <i>Екскурсія Ужгородом</i>
-            </li>
-        </ul>
-        <ol>
-            <li>Ужгородський замок</li>
-            <li>Вулиця винних підвалів</li>
-            <li>Єврейський квартал</li>
-        </ol>
-        <label>
-            <button type="button">Детальніше</button>
-        </label>
-        <br>
-        <div>
-            <button type="button">1</button>
-            <button type="button">2</button>
+        <div class="lviv">
+            <img src="img/lvivr.jpg" width="600" height="300" alt="Львів з висоти пташиного польоту">
+            <ul>
+                <li>
+                    <i>Екскурсія Львовом</i>
+                </li>
+            </ul>
+            <ol>
+                <li>Вуличками Львова</li>
+                <li>Підземелля Львова</li>
+                <li>7 чудес Львова</li>
+            </ol>
+            <button type="button" onclick="getFromLocalStorage('lviv')">Детальніше</button>
+            <button type="button" onclick="clearText('lviv')">Очистити</button>
+            <div id="container-lviv"></div>
         </div>
-        <br>
-        <img src="img/ivano-frankivsk.jpg" width="600" height="300" alt="Головна поща Івано-Франківська">
-        <ul>
-            <li>
-                <i>Екскурсія Івано-франківськом</i>
-            </li>
-        </ul>
-        <ol>
-            <li>Палац Потоцьких</li>
-            <li>Музей мистецтв Прикарпаття</li>
-            <li>Фортечні стіни і вали</li>
-        </ol>
-        <label>
-            <button type="button">Детальніше</button>
-        </label>
-        <br>
-        <img src="img/chernivtsi.jpg" width="600" height="300" alt="Чернівецький університет">
-        <ul>
-            <li>
-                <i>Екскурсія Чернівцями</i>
-            </li>
-        </ul>
-        <ol>
-            <li>Храми Чернівців</li>
-            <li>Центральна площа міста</li>
-            <li>Чернівецький університет</li>
-        </ol>
-        <label>
-            <button type="button">Детальніше</button>
-        </label>
-        <br>
-        <img src="img/ternopil.jpg" width="600" height="300" alt="Тернопільський став">
-        <ul>
-            <li>
-                <i>Екскурсія Тернополем</i>
-            </li>
-        </ul>
-        <ol>
-            <li>Головна площа Тернополя</li>
-            <li>Вулиця Валова</li>
-            <li>Тернопільський став</li>
-        </ol>
-        <label>
-            <button type="button">Детальніше</button>
-        </label>
-        <br>
-        <img src="img/karpaty.jpg" width="600" height="300" alt="Ранок у Карпатах">
-        <ul>
-            <li>
-                <i>Екскурсія Карпатами</i>
-            </li>
-        </ul>
-        <ol>
-            <li>Перлина Карпат-Синевир</li>
-            <li>Гуцульські Карпати</li>
-            <li>Сколівські бескиди</li>
-        </ol>
-        <label>
-            <button type="button">Детальніше</button>
-        </label>
-        <div>
-            <h2>Ви можете знайти нас :</h2>
-            <br>
-            <img src="img/facebook.jpg" width="100" height="100" alt="іконка фейсбуку">
-            <a href="https://www.instagram.com/dmitrashchukgalina/?hl=uk">https://www.instagram.com/dmitrashchukgalina/?hl=uk</a>
+        <div class="lutsk">
+            <img src="img/lutsk.jpg" width="600" height="300" alt="Вечірній Луцьк">
+            <ul>
+                <li>
+                    <i>Екскурсія Луцьком</i>
+                </li>
+            </ul>
+            <ol>
+                <li>Замок Любарта</li>
+                <li>Музеї Луцька</li>
+                <li>Храми Луцька</li>
+            </ol>
+            <button type="button" onclick="getFromLocalStorage('lutsk')">Детальніше</button>
+            <button type="button" onclick="clearText('lutsk')">Очистити</button>
+            <div id="container-lutsk"></div>
         </div>
-        <div>
-             <img src="img/instagram.jpg" width="100" height="100" alt="іконка інстаграму">            <a href="https://www.facebook.com/saharevych">https://www.facebook.com/saharevych</a>
+        <div class="uzhgorod">
+            <img src="img/uzhorod.jpg" width="600" height="300" alt="Ужгород">
+            <ul>
+                <li>
+                    <i>Екскурсія Ужгородом</i>
+                </li>
+            </ul>
+            <ol>
+                <li>Ужгородський замок</li>
+                <li>Вулиця винних підвалів</li>
+                <li>Єврейський квартал</li>
+            </ol>
+            <button type="button" onclick="getFromLocalStorage('uzhgorod')">Детальніше</button>
+            <button type="button" onclick="clearText('uzhgorod')">Очистити</button>
+            <div id="container-uzhgorod"></div>
         </div>
-        <div>
-            <h2>Ви можете написати нам :</h2>
-            <br>
-            <nav style="text-align:left">
-                <label>
-                    <input type="text" name="Your name" value="Your name" style="width: 600px; height: 20px;">
-                </label>
+        <div class="stanislav">
+            <img src="img/ivano-frankivsk.jpg" width="600" height="300" alt="Головна поща Івано-Франківська">
+            <ul>
+                <li>
+                    <i>Екскурсія Івано-франківськом</i>
+                </li>
+            </ul>
+            <ol>
+                <li>Палац Потоцьких</li>
+                <li>Музей мистецтв Прикарпаття</li>
+                <li>Фортечні стіни і вали</li>
+            </ol>
+            <button type="button" onclick="getFromLocalStorage('stanislav')">Детальніше</button>
+            <button type="button" onclick="clearText('stanislav')">Очистити</button>
+            <div id="container-stanislav"></div>
+        </div>
+        <div class="chernivtsi">
+            <img src="img/chernivtsi.jpg" width="600" height="300" alt="Чернівецький університет">
+            <ul>
+                <li>
+                    <i>Екскурсія Чернівцями</i>
+                </li>
+            </ul>
+            <ol>
+                <li>Храми Чернівців</li>
+                <li>Центральна площа міста</li>
+                <li>Чернівецький університет</li>
+            </ol>
+            <button type="button" onclick="getFromLocalStorage('chernivtsi')">Детальніше</button>
+            <button type="button" onclick="clearText('chernivtsi')">Очистити</button>
+            <div id="container-chernivtsi"></div>
+            <div class="ternopil">
+                <img src="img/ternopil.jpg" width="600" height="300" alt="Тернопільський став">
+                <ul>
+                    <li>
+                        <i>Екскурсія Тернополем</i>
+                    </li>
+                </ul>
+                <ol>
+                    <li>Головна площа Тернополя</li>
+                    <li>Вулиця Валова</li>
+                    <li>Тернопільський став</li>
+                </ol>
+                <button type="button" onclick="getFromLocalStorage('ternopil')">Детальніше</button>
+                <button type="button" onclick="clearText('ternopil')">Очистити</button>
+                <div id="container-ternopil"></div>
+            </div>
+            <div class="karpaty">
+                <img src="img/karpaty.jpg" width="600" height="300" alt="Ранок у Карпатах">
+                <ul>
+                    <li>
+                        <i>Екскурсія Карпатами</i>
+                    </li>
+                </ul>
+                <ol>
+                    <li>Перлина Карпат-Синевир</li>
+                    <li>Гуцульські Карпати</li>
+                    <li>Сколівські бескиди</li>
+                </ol>
+                <button type="button" onclick="getFromLocalStorage('karpaty')">Детальніше</button>
+                <button type="button" onclick="clearText('karpaty')">Очистити</button>
+                <div id="container-karpaty"></div>
+            </div>
+            <div>
+                <h2>Ви можете знайти нас :</h2>
                 <br>
                 <label>
-                    <input type="text" name="Email address" value="Email address" style="width: 600px; height: 20px;">
+                    <a href="https://www.instagram.com/dmitrashchukgalina/?hl=uk">
+                        <img src="img/facebook.jpg" width="100" height="100" alt="іконка фейсбуку">
+                    </a>
                 </label>
+            </div>
+            <div>
+                
+                    <a href="https://www.facebook.com/saharevych">
+                        <img src="img/instagram.jpg" width="100" height="100" alt="іконка інстаграму">
+                    </a>
+            </div>
+            <div>
+                <h2>Ви можете написати нам :</h2>
                 <br>
+                <nav style="text-align:left">
+                    <label>
+                        <input type="text" name="Your name" value="Your name" style="width: 600px; height: 20px;">
+                    </label>
+                    <br>
+                    <label>
+                        <input type="text" name="Email address" value="Email address" style="width: 600px; height: 20px;">
+                    </label>
+                    <br>
+                    <br>
+                    <input type="text" name="Your message" value="Your message" style="width: 600px; height: 100px;">
+                </nav>
                 <br>
-                <input type="text" name="Your message" value="Your message" style="width: 600px; height: 100px;">
-            </nav>
-            <br>
-            <button type="button">send</button>
-        </div>-->
-        <!-- <script src="js/index.js"></script> -->
-        <script src="js/index.js"></script>
+                <button type="button">send</button>
+            </div>
+            <script src="js/cities.js"></script>
+            <script src="js/index.js"></script>
     </body>
 </html>
