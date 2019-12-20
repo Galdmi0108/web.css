@@ -25,34 +25,31 @@ header {
     align-items: center;
 }
 
-.block-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .logo {
     background-image: url(../img/lviv.jpg);
     border: 4px double black;
-    width: 250px;
-    height: 128px;
+    width: 200px;
+    height: 100px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .block-titles {
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .main-container {
-    padding: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .main-container .block {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .main-container .block p {
@@ -61,6 +58,71 @@ header {
     font-size: 20px;
 }
 
-.main-container .block img, .main-container .block p {
+
+.main-container .block img, 
+.main-container .block p {
     width: 100%;
+    
+}
+
+.city-container {
+    position: relative;
+    margin: 60px  auto;
+    max-width: 1200px;
+}  
+
+.city-container div[city="city"] {
+    margin: 20px 0;
+} 
+
+.city-container div[city="city"] div:first-child {
+    width: 70%; 
+    display: inline-block;
+}
+
+.city-container div[city="city"] div:first-child img {
+    height: 400px;
+    width: 100%;
+}
+
+.city-container div[city="city"] div:nth-child(2) {
+    width: 29%; 
+    display: inline-block;
+    vertical-align: top;
+}
+
+.city-container div[city="city"] div:last-child {
+    width: 100%; 
+    padding: 10px 0;
+}
+    
+.socnetwork{
+   display: flex;  
+   flex-direction: row;
+   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  .city-container {
+    min-width: 620px;
+    overflow: scroll;
+  }  
+
+.city-container div[city="city"] div:first-child {
+    width: 100%; 
+    display: block;
+}
+
+.city-container div[city="city"] div:first-child img {
+    height: 400px;
+    width: 100%;
+}
+
+.city-container div[city="city"] div:nth-child(2) {
+    width: 100%; 
+    display: block;
+    text-align: left;
+    margin: 10px;
+} 
 }

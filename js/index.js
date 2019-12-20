@@ -11,7 +11,6 @@ function getFromLocalStorage(city) {
 
 function clearText(city) {
     const container = document.getElementById(`container-${city}`);
-    // textOfParagraph.innerHTML = '';
     container.removeChild(textOfParagraph)
 }
 

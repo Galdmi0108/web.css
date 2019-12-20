@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>westtraveler</title>
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body id="color">
         <header>
@@ -19,33 +20,75 @@
                         <h2>Екскурсії  Західною Україною</h2>
                     </div>
                 </div>
-                <div class="block-nav">
-                    <nav>
-                        <label>
-                            <input type="text" name="search" value="search">
-                        </label>
-                        <label>
-                            <input type="text" name="language" value="language">
-                        </label>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div class="main-container">
-            <div class="block">
                 <div>
-                    <img src="img/lvivd.jpg" alt="Ранковий Львів">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Контактні номери:
+  </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">0978043738</a>
+                            <a class="dropdown-item" href="#">0978043738</a>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Західна Україна багата на цікаві місця, тож ви точно не пожалієте, якщо<br>
-                    вирушите на відпочинок саме туди. Зібрали для вас ідеї для мандрів, під<br>
-                    час яких ви побачите як добре відомі туристичні маршрути, так і не менш<br>красиві куточки Західної України, про які знають не всі. Гайда в подорож!
-                
-                </p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Графік роботи
+  </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">ПН-СБ 9.00 - 18.00</a>
+                        <a class="dropdown-item" href="#">НД 9.00 - 17.00</a>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    var css_file = document.createElement("link");
+                    css_file.setAttribute("rel", "stylesheet");
+                    css_file.setAttribute("type", "text/css");
+                    css_file.setAttribute("href", "//s.bookcdn.com//css/cl/bw-cl-180x170r7.css");
+                    document.getElementsByTagName("head")[0].appendChild(css_file);
+                </script>
+                <div id="tw_17_234538168">
+                    <div style="width:75px; height:90px; margin: 0 auto;">
+                        <a href="https://hotelmix.com.ua/time/lviv-4436">Львів</a>
+                        <br/>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    function setWidgetData_234538168(data) {
+                        if (typeof (data) != 'undefined' && data.results.length > 0) {
+                            for (var i = 0; i < data.results.length; ++i) {
+                                var objMainBlock = '';
+                                var params = data.results[i];
+                                objMainBlock = document.getElementById('tw_' + params.widget_type + '_' + params.widget_id);
+                                if (objMainBlock !== null)
+                                    objMainBlock.innerHTML = params.html_code;
+                            }
+                        }
+                    }
+                    var clock_timer_234538168 = -1;
+                </script>
+                <script type="text/javascript" charset="UTF-8" src="https://widgets.booked.net/time/info?ver=2&domid=966&type=17&id=234538168&scode=124&city_id=4436&wlangid=29&mode=2&details=0&background=ffffff&color=000000&add_background=ffffff&add_color=333333&head_color=ffffff&border=0&transparent=0"></script>
+                <!-- clock widget end -->
             </div>
+</div></div></header>
+<div class="main-container">
+    <div class="block">
+        <div>
+            <img src="img/lvivd.jpg" height=500px; alt="Ранковий Львів">
         </div>
-        <div class="lviv">
-            <img src="img/lvivr.jpg" width="600" height="300" alt="Львів з висоти пташиного польоту">
+        <p>
+            Західна Україна багата на цікаві місця, тож ви точно не пожалієте, якщо<br>
+            вирушите на відпочинок саме туди. Зібрали для вас ідеї для мандрів, під<br>
+            час яких ви побачите як добре відомі туристичні маршрути, так і не менш<br>красиві куточки Західної України, про які знають не всі. Гайда в подорож!
+                
+                
+        </p>
+    </div>
+</div>
+<div class="city-container">
+    <div city="city" class="lviv">
+        <div>
+            <img src="img/lvivr.jpg" alt="Львів з висоти пташиного польоту">
+        </div>
+        <div>
             <ul>
                 <li>
                     <i>Екскурсія Львовом</i>
@@ -56,12 +99,18 @@
                 <li>Підземелля Львова</li>
                 <li>7 чудес Львова</li>
             </ol>
-            <button type="button" onclick="getFromLocalStorage('lviv')">Детальніше</button>
-            <button type="button" onclick="clearText('lviv')">Очистити</button>
-            <div id="container-lviv"></div>
+            <ol>
+                <button type="button" style="color:green;" onclick="getFromLocalStorage('lviv')">Детальніше</button>
+                <button type="button" style="color:red;" onclick="clearText('lviv')">X</button>
+            </ol>
         </div>
-        <div class="lutsk">
-            <img src="img/lutsk.jpg" width="600" height="300" alt="Вечірній Луцьк">
+        <div id="container-lviv"></div>
+    </div>
+    <div city="city" class="lutsk">
+        <div>
+            <img src="img/lutsk.jpg" alt="Вечірній Луцьк">
+        </div>
+        <div>
             <ul>
                 <li>
                     <i>Екскурсія Луцьком</i>
@@ -72,12 +121,18 @@
                 <li>Музеї Луцька</li>
                 <li>Храми Луцька</li>
             </ol>
-            <button type="button" onclick="getFromLocalStorage('lutsk')">Детальніше</button>
-            <button type="button" onclick="clearText('lutsk')">Очистити</button>
-            <div id="container-lutsk"></div>
+            <ol>
+                <button type="button" style="color:green;" onclick="getFromLocalStorage('lutsk')">Детальніше</button>
+                <button type="button" style="color:red;" onclick="clearText('lutsk')">X</button>
+            </ol>
         </div>
-        <div class="uzhgorod">
-            <img src="img/uzhorod.jpg" width="600" height="300" alt="Ужгород">
+        <div id="container-lutsk"></div>
+    </div>
+    <div city="city" class="uzhgorod">
+        <div>
+            <img src="img/uzhorod.jpg" alt="Ужгород">
+        </div>
+        <div>
             <ul>
                 <li>
                     <i>Екскурсія Ужгородом</i>
@@ -88,12 +143,18 @@
                 <li>Вулиця винних підвалів</li>
                 <li>Єврейський квартал</li>
             </ol>
-            <button type="button" onclick="getFromLocalStorage('uzhgorod')">Детальніше</button>
-            <button type="button" onclick="clearText('uzhgorod')">Очистити</button>
-            <div id="container-uzhgorod"></div>
+            <ol>
+                <button type="button" style="color:green;" onclick="getFromLocalStorage('uzhgorod')">Детальніше</button>
+                <button type="button" style="color:red;" onclick="clearText('uzhgorod')">X</button>
+            </ol>
         </div>
-        <div class="stanislav">
-            <img src="img/ivano-frankivsk.jpg" width="600" height="300" alt="Головна поща Івано-Франківська">
+        <div id="container-uzhgorod"></div>
+    </div>
+    <div city="city" class="stanislav">
+        <div>
+            <img src="img/ivano-frankivsk.jpg" alt="Головна поща Івано-Франківська">
+        </div>
+        <div>
             <ul>
                 <li>
                     <i>Екскурсія Івано-франківськом</i>
@@ -104,12 +165,18 @@
                 <li>Музей мистецтв Прикарпаття</li>
                 <li>Фортечні стіни і вали</li>
             </ol>
-            <button type="button" onclick="getFromLocalStorage('stanislav')">Детальніше</button>
-            <button type="button" onclick="clearText('stanislav')">Очистити</button>
-            <div id="container-stanislav"></div>
+            <ol>
+                <button type="button" style="color:green;" onclick="getFromLocalStorage('stanislav')">Детальніше</button>
+                <button type="button" style="color:red;" onclick="clearText('stanislav')">X</button>
+            </ol>
         </div>
-        <div class="chernivtsi">
-            <img src="img/chernivtsi.jpg" width="600" height="300" alt="Чернівецький університет">
+        <div id="container-stanislav"></div>
+    </div>
+    <div city="city" class="chernivtsi">
+        <div>
+            <img src="img/chernivtsi.jpg" alt="Чернівецький університет">
+        </div>
+        <div>
             <ul>
                 <li>
                     <i>Екскурсія Чернівцями</i>
@@ -120,75 +187,102 @@
                 <li>Центральна площа міста</li>
                 <li>Чернівецький університет</li>
             </ol>
-            <button type="button" onclick="getFromLocalStorage('chernivtsi')">Детальніше</button>
-            <button type="button" onclick="clearText('chernivtsi')">Очистити</button>
-            <div id="container-chernivtsi"></div>
-            <div class="ternopil">
-                <img src="img/ternopil.jpg" width="600" height="300" alt="Тернопільський став">
-                <ul>
-                    <li>
-                        <i>Екскурсія Тернополем</i>
-                    </li>
-                </ul>
-                <ol>
-                    <li>Головна площа Тернополя</li>
-                    <li>Вулиця Валова</li>
-                    <li>Тернопільський став</li>
-                </ol>
-                <button type="button" onclick="getFromLocalStorage('ternopil')">Детальніше</button>
-                <button type="button" onclick="clearText('ternopil')">Очистити</button>
-                <div id="container-ternopil"></div>
-            </div>
-            <div class="karpaty">
-                <img src="img/karpaty.jpg" width="600" height="300" alt="Ранок у Карпатах">
-                <ul>
-                    <li>
-                        <i>Екскурсія Карпатами</i>
-                    </li>
-                </ul>
-                <ol>
-                    <li>Перлина Карпат-Синевир</li>
-                    <li>Гуцульські Карпати</li>
-                    <li>Сколівські бескиди</li>
-                </ol>
-                <button type="button" onclick="getFromLocalStorage('karpaty')">Детальніше</button>
-                <button type="button" onclick="clearText('karpaty')">Очистити</button>
-                <div id="container-karpaty"></div>
-            </div>
+            <ol>
+                <button type="button" style="color:green;" onclick="getFromLocalStorage('chernivtsi')">Детальніше</button>
+                <button type="button" style="color:red;" onclick="clearText('chernivtsi')">X</button>
+            </ol>
+        </div>
+        <div id="container-chernivtsi"></div>
+    </div>
+    <div city="city" class="ternopil">
+        <div>
+            <img src="img/ternopil.jpg" alt="Тернопільський став">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <i>Екскурсія Тернополем</i>
+                </li>
+            </ul>
+            <ol>
+                <li>Головна площа Тернополя</li>
+                <li>Вулиця Валова</li>
+                <li>Тернопільський став</li>
+            </ol>
+            <ol>
+                <button type="button" style="color:green;" onclick="getFromLocalStorage('ternopil')">Детальніше</button>
+                <button type="button" style="color:red;" onclick="clearText('ternopil')">X</button>
+            </ol>
+        </div>
+        <div id="container-ternopil"></div>
+    </div>
+    <div city="city" class="karpaty">
+        <div>
+            <img src="img/karpaty.jpg" alt="Ранок у Карпатах">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <i>Екскурсія Карпатами</i>
+                </li>
+            </ul>
+            <ol>
+                <li>Перлина Карпат-Синевир</li>
+                <li>Гуцульські Карпати</li>
+                <li>Сколівські бескиди</li>
+            </ol>
+            <ol>
+                <button type="button" style="color:green;" onclick="getFromLocalStorage('karpaty')">Детальніше</button>
+                <button type="button" style="color:red;" onclick="clearText('karpaty')">X</button>
+            </ol>
+        </div>
+        <div id="container-karpaty"></div>
+    </div>
+</div>
+<div class="info-container">
+    <div class="socnetwork">
+        <div>
+            <h2>Ви можете знайти нас :</h2>
+        </div>
+        <div>
+            <ol>
+                <a href="https://www.facebook.com/saharevych">
+                    <img src="img/facebook.jpg" width="100" height="100" alt="іконка фейсбуку">
+                </a>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <a href="https://www.instagram.com/dmitrashchukgalina/?hl=uk">
+                    <img src="img/instagram.jpg" width="100" height="100" alt="іконка інстаграму">
+                </a>
+            </ol>
+        </div>
+        <div style="text-align:center; width: 50%; margin: 0 auto;">
             <div>
-                <h2>Ви можете знайти нас :</h2>
-                <br>
-                <label>
-                    <a href="https://www.instagram.com/dmitrashchukgalina/?hl=uk">
-                        <img src="img/facebook.jpg" width="100" height="100" alt="іконка фейсбуку">
-                    </a>
-                </label>
+                <h5>Відправити повідомлення нам на пошту можна у наступній формі:</h5>
             </div>
-            <div>
-                
-                    <a href="https://www.facebook.com/saharevych">
-                        <img src="img/instagram.jpg" width="100" height="100" alt="іконка інстаграму">
-                    </a>
-            </div>
-            <div>
-                <h2>Ви можете написати нам :</h2>
-                <br>
-                <nav style="text-align:left">
-                    <label>
-                        <input type="text" name="Your name" value="Your name" style="width: 600px; height: 20px;">
-                    </label>
-                    <br>
-                    <label>
-                        <input type="text" name="Email address" value="Email address" style="width: 600px; height: 20px;">
-                    </label>
-                    <br>
-                    <br>
-                    <input type="text" name="Your message" value="Your message" style="width: 600px; height: 100px;">
-                </nav>
-                <br>
-                <button type="button">send</button>
-            </div>
-            <script src="js/cities.js"></script>
-            <script src="js/index.js"></script>
-    </body>
-</html>
+            <form method="POST" action="https://formspree.io/xwkvvvao" style="text-align: left;">
+                <div class="form-group">
+                    <label for="email">Name:</label>
+                    <input type="text" name="name" class="form-control" placeholder="Enter name" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" class="form-control" cols="10" rows="4" placeholder="Enter message"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Email:</label>
+                    <input type="email" name="_replyto" class="form-control" placeholder="Enter email" id="pwd">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/cities.js"></script>
+<script src="js/index.js"></script>
+</body></html>
